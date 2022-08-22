@@ -1,0 +1,326 @@
+:root {
+    --border: 3px solid black;
+}
+
+body {
+    margin: auto 0;
+}
+
+div {
+    display: block;
+}
+
+/* *,
+:after,
+:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} */
+@media (min-width: 1000px) {
+    /* header {
+        border: 8px solid grey;
+    } */
+
+    .container_header {
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+    .header_background {
+        position: relative;
+        margin: auto;
+        max-width: 65rem;
+        /* border: 3px dotted orange; */
+    }
+
+    /*  linear-gradient(100deg, rgba(230, 227, 226, 0.8) 0, rgba(112, 93, 80, 0.5) 40%), */
+    .container_header::before {
+        content: "";
+        background: linear-gradient(100deg, rgba(94, 92, 92, 0.8) 0, rgba(24, 23, 22, 0.5) 40%), url("12.jpg") 90% no-repeat;
+        /* background-color: #E7F6F2; */
+        background-size: cover;
+        background-position: 60%;
+        position: absolute;
+
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: .9;
+        z-index: -1;
+    }
+
+    .topnav {
+        /* box-sizing: border-box; */
+        /* -webkit-box-sizing: border-box; */
+        margin: auto;
+        /* border: 1px solid black; */
+        color: black;
+        font-size: 1.4em;
+        font-weight: 700;
+        width: 100%;
+        max-width: 65rem;
+        height: 4.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #HOME {
+        /* border: var(--border); */
+        font-size: 1.2em;
+        color: #000;
+    }
+
+    .menu_bar {
+        padding: auto;
+        display: flex;
+        /* border: 2px solid black; */
+        justify-content: right;
+    }
+
+    .menu_bar div {
+        margin: 0 5px;
+        cursor: pointer;
+        color: #000;
+        /* border: 1px solid black; */
+        justify-content: space-between;
+    }
+
+    .welcome_text {
+        font-size: 1.2em;
+        color: #000;
+        font-weight: 700;
+        max-width: 65rem;
+        margin: 100px auto;
+        /* border: 1px solid red; */
+    }
+
+    .welcome_text hr {
+        border-top: 5px solid white;
+        font-weight: 800;
+        height: 0;
+        width: 3.25rem;
+        margin: 2.5em auto;
+    }
+
+    .welcome_text div {
+        font-size: 2.5em;
+        text-align: center;
+        margin: 1px;
+        /* border: 1px solid black; */
+    }
+
+    article {
+        max-width: 65rem;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        /* border: 1px solid red; */
+    }
+
+    .content_title > div {
+        margin: auto auto 30px auto;
+        width: fit-content;
+        font-size: 3em;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: var(--border);
+    }
+
+    .about_me_content {
+        background-color: #cccccc;
+        margin: 0 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        border-radius: 1rem;
+        /* border: var(--border); */
+    }
+
+    .about_me_content div {
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        display: flex;
+        /* border: var(--border); */
+    }
+
+    .icon {
+        height: 50px;
+        width: auto;
+    }
+
+    .about_me_content_title {
+        font-size: 1.5em;
+    }
+
+    .about_me_content > div > div {
+        margin: 0;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    .skills_content {
+        background-color: #ffc107;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 10px;
+        border-radius: 1rem;
+        /* border: var(--border); */
+    }
+
+    .skills_content div {
+        margin: 10px;
+        border-radius: 1rem;
+        /* border: var(--border); */
+        background-color: #fff350;
+    }
+
+    #skills {
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+
+    .project_content div {
+        align-items: center;
+        margin: 10px auto;
+        /* border: var(--border); */
+    }
+
+    .project_content > div {
+        text-align: center;
+        display: grid;
+        margin: 20px auto;
+        padding: 30px;
+        background-color: #658892;
+        /* border: var(--border); */
+        border-radius: 1rem;
+    }
+
+    .project_detail {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project_name {
+        font-weight: 600;
+        font-size: 2em;
+    }
+
+    .project_date {
+        font-size: 1.4em;
+    }
+
+    .project_img {
+        margin: 30px auto;
+        width: 70%;
+        border-radius: 0.5rem;
+    }
+
+    /*article background color*/
+    .container_about_me {
+        background: #E7F6F2;
+    }
+
+    .container_skills {
+        background: #ffc107;
+    }
+
+    .container_project {
+        background: #395B64;
+    }
+
+    .container_archiving {
+        background: #2C3333;
+    }
+
+
+
+    .content_title_archiving {
+        margin: auto;
+        width: fit-content;
+        font-size: 3em;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: 3px solid white;
+    }
+
+    #archiving {
+        color: white;
+    }
+
+    .archivint_content {
+        margin: auto;
+        display: flex;
+    }
+
+    .github {
+        background-color: white;
+        margin: 30px auto;
+        padding: 10px;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+        text-align: center;
+        border-radius: 2rem;
+    }
+
+    #github_link {
+        color: inherit;
+        color: black;
+    }
+
+
+    /*Footer*/
+    .footer {
+        background: black;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact_icon {
+        height: 3.5em;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .contact_icon div {
+        position: relative;
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        padding: 2px;
+        margin: 0 0.5rem;
+        border-radius: 2rem;
+        background-color: white;
+    }
+
+    .contact_icon > div > img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 2rem;
+        cursor: pointer;
+    }
+
+    #instagram {
+        background-color: black;
+    }
+
+    .copyright {
+        color: white;
+    }
+
+}
