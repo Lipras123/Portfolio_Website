@@ -16,6 +16,7 @@ div {
 
 * {
     box-sizing: border-box;
+    word-break: break-all;
 }
 
 /* *,
@@ -526,7 +527,7 @@ article {
 
     .about_me_content {
         background-color: #cccccc;
-        margin: 0 100px;
+        margin: 0 30px;
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
@@ -553,7 +554,7 @@ article {
     }
 
     .skills_content > div {
-        margin: 10px 100px;
+        margin: 10px 30px;
         border-radius: 1rem;
         /* border: var(--border); */
         background-color: #fff350;
@@ -568,7 +569,7 @@ article {
         align-items: center;
         text-align: center;
         display: grid;
-        margin: 20px 100px;
+        margin: 20px 30px;
         padding: 20px;
         background-color: #658892;
         /* border: var(--border); */
